@@ -10,7 +10,7 @@ Please see [Python SDK](https://fair-documentation.readthedocs.io/en/latest/SDKM
 
 
 
-Building from source on Python 3.12 (Linux)
+Building from source on Python >= 3.12 (Linux)
 -------------------------------------------
 
 The repository ships precompiled extensions for Python 3.10 and 3.11 in
