@@ -88,6 +88,11 @@ PYTHONPATH=../libfairino python -c "import Robot; print(Robot.__file__)"
 
 This should print the path to the `cpython-312` `.so` you just built.
 
+### 6. Optional: Add to site-packages
+```bash
+site_packages=$(python3 -c "import site; print(site.getsitepackages()[0])")
+printf '%s\n' /home/manuel-rt/fairino-python-sdk/linux > "$site_packages/fairino-sdk.pth"
+```
 ### Troubleshooting
 
 - `ModuleNotFoundError: No module named 'distutils'` — you forgot to
